@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Vacation Suggestions - an Epicodus exercise</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>This page will take your preferences, and suggest a fantastic vacation destination !</h1>
+
+        <form>
+          <div class="form-group">
+            <label for="user">What Is Your Name?</label>
+            <input id="user" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="food">What type of food would you prefer ?</label>
+            <select class="form-control" id="food">
+              <option>Steak and Americal favorites</option>
+              <option>Fish and seafood</option>
+              <option>Sophisticated cuisine</option>
+              <option>Southern cuisine</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="lodging">What Is Your Preferred Lodging ?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="lodging" value="Brown" checked>
+                Brown
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="lodging" value="Blonde">
+                Blonde
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="lodging" value="Black">
+                Black
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Submit Answers!</button>
+        </form>
+        <div id="results">
+          <h2>Here is what you chose:</h2>
+          <ul>
+            <li><span class="user"></span></li>
+            <li><span class="food"></span></li>
+            <li><span class="animal"></span></li>
+            <li><span class="band"></span></li>
+            <li><span class="lodging"></span></li>
+            <li><span class="job"></span></li>
+            <li><span class="born"></span></li>
+          </ul>
+        </div>
+
+    </div>
+  </body>
+</html>
