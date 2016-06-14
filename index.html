@@ -9,21 +9,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>This page will take your preferences, and suggest a fantastic vacation destination !</h1>
-
-        <form>
+      <h1>This page will take your preferences, and suggest a fantastic vacation destination just for you !</h1>
+      <br>
+      <div id="vacationForm">
+        <form class="col-md-4">
           <div class="form-group">
-            <label for="user">What Is Your Name?</label>
+            <label for="user">Please enter your name:</label>
             <input id="user" class="form-control" type="text">
           </div>
 
           <div class="form-group">
-            <label for="food">What type of food would you prefer ?</label>
+            <label for="food">What type of cuisine would you prefer ?</label>
             <select class="form-control" id="food">
-              <option>Steak and Americal favorites</option>
-              <option>Fish and seafood</option>
-              <option>Sophisticated cuisine</option>
-              <option>Southern cuisine</option>
+              <option value="1">Steak and Americal favorites</option>
+              <option value="2">Fish and seafood</option>
+              <option value="3">Sophisticated cuisine</option>
+              <option value="4">Southern cuisine</option>
             </select>
           </div>
 
@@ -31,39 +32,117 @@
             <label for="lodging">What Is Your Preferred Lodging ?</label>
             <div class="radio">
               <label>
-                <input type="radio" name="lodging" value="Brown" checked>
-                Brown
+                <input type="radio" name="lodging" value="lodge" checked>
+                Giant lodge
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="lodging" value="Blonde">
-                Blonde
+                <input type="radio" name="lodging" value="bungalo">
+                Thatch and bamboo bungalow
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="lodging" value="Black">
-                Black
+                <input type="radio" name="lodging" value="hotel">
+                Fancy Hotel
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="lodging" value="bandb">
+                Unique old-world bed & breakfast
               </label>
             </div>
           </div>
 
-          <button type="submit" class="btn">Submit Answers!</button>
+          <div class="form-group">
+            <label for="activity">What type of activities would you prefer ?</label>
+            <select class="form-control" id="activity">
+              <option value="1">Skiing and mountain walks</option>
+              <option value="2">Lounging on sandy beaches</option>
+              <option value="3">Visiting world-class museums</option>
+              <option value="4">Street parties and good times</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="architecture">What type of architecture would you like to gaze at ?</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="architecture" value="log" checked>
+                Hand-crafted log dwellings
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="architecture" value="pastel">
+                White, bright, and pastel
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="architecture" value="highRise">
+                Gleaming high-rises
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="architecture" value="iron">
+                Quaint Spanish and French styling
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="likes">Which do you like best ?</label>
+            <select class="form-control" id="likes">
+              <option value="1">Big Vistas</option>
+              <option value="2">Sand between my toes</option>
+              <option value="3">Urban hustle and bustle</option>
+              <option value="4">Surrounded by the feeling of history</option>
+            </select>
+          </div>
+
+          <br>
+          <button type="submit" class="btn">Find your Vacation Destination !</button>
+          <br>
         </form>
-        <div id="results">
-          <h2>Here is what you chose:</h2>
-          <ul>
-            <li><span class="user"></span></li>
-            <li><span class="food"></span></li>
-            <li><span class="animal"></span></li>
-            <li><span class="band"></span></li>
-            <li><span class="lodging"></span></li>
-            <li><span class="job"></span></li>
-            <li><span class="born"></span></li>
-          </ul>
+      </div>
+
+      <div id="output">
+        <h2>Dear <span class="user"></span>, here is your suggested vacation destination:</h2>
+        <h3>Current Scoreboard:</h3>
+        <ul>
+          <li>Mountain: <span id=mtn></span></li>
+          <li>Beach: <span id=beach></span></li>
+          <li>NYCity: <span id=city></span></li>
+          <li>South: <span id=south></span></li>
+        </ul>
+        <div class=mtnWin>
+          <h3>Whitefish Montana</h3>
+          <img class="float-right smaller-border" src="img/whitefish_town.jpg" alt="The town of Whitefish Montana"/>
+          <p>A beautiful, authentic mountain town near Glacier National park, Whitefish exudes a laid-back atmosphere where you can enjoy the abundant snow, lakes, mountain scenery, and fantastic food.</p>
         </div>
 
+        <div class=beachWin>
+          <h3>Hawaii</h3>
+          <img class="float-right smaller-border" src="img/hawaii.jpg" alt="Island Paradise"/>
+          <p>A beautiful, authentic mountain town near Glacier National park, Whitefish exudes a laid-back atmosphere where you can enjoy the abundant snow, lakes, mountain scenery, and fantastic food.</p>
+        </div>
+
+        <div class=cityWin>
+          <h3>New York City</h3>
+          <img class="float-right smaller-border" src="img/new_york_city_lights.jpg" alt="New York City"/>
+          <p>New York City is a fast-paced, globally influential center of art, culture, fashion and finance. Where the Hudson River meets the Atlantic Ocean, "The Big Apple" is home to a fantastic array of interesting and iconic destinations, including the Empire State Building, Times Square, and the Statue of Liberty.</p>
+        </div>
+
+        <div class=southWin>
+          <h3>New Orleans, Louisianna</h3>
+          <img class="float-right smaller-border" src="img/new_orleans.jpg" alt="New Orleans"/>
+          <p>New Orleans is a fascinating and truly unique melting pot of culture, food and music. Experience one of America's most culturally and historically-rich destinations.</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
