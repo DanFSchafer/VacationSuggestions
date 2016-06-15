@@ -1,26 +1,33 @@
-# _Vacation Suggestion, an epicodus exercise_
+# Vacation Suggestion, an epicodus exercise
 
-#### By _**Dan Schafer** June 14, 2016_
+#### By **Dan Schafer** June 14, 2016
 
 ## Description
 
-_Fill in the form, and a vacation suggestion appears_
+Fill in the form, and a vacation suggestion appears !
 
 ## Known Bugs
 
-The form doesn't currently work for consequtive submissions, unfortunately.
+The form doesn't currently work for consecutive submissions, unfortunately.
+Can't figure out how to "hide" previous results.
 
 ## Support and contact details
 
-_Feel free to contact me with bugs/enhancement requests at danfschafer@gmail.com_
+Feel free to contact me with bugs/enhancement requests at danfschafer@gmail.com
 
 ## Technologies Used
 
 html, css, jQuery, bootstrap
 
-### License
+## Links to project
 
-*MIT
+GitHub Pages: http://danfschafer.github.io/VacationSuggestions/
 
-Copyright (c) 2016 **_Dan Schafer_**
+GitHub Repository: https://github.com/DanFSchafer/VacationSuggestions
+
+## License
+
+MIT
+
+Copyright (c) 2016 **Dan Schafer**
 
