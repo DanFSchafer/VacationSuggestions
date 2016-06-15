@@ -2,6 +2,22 @@
   display: none;
 }
 
+.mntWin {
+  display: none;
+}
+
+.beachWin {
+  display: none;
+}
+
+.cityWin {
+  display: none;
+}
+
+.southWin {
+  display: none;
+}
+
 .float-right {
   float: right;
   width: 300px;

@@ -1,6 +1,6 @@
 $(function() {
   $("#vacationForm form").submit(function(event) {
-
+  event.preventDefault();
 // username
   var name = $("input#user").val();
   $(".user").text(name);
@@ -66,35 +66,32 @@ $(function() {
     southScore +=1
   }
 
-  // (temp) show scores
-  $("#mtn").text(mntScore);
-  $("#beach").text(beachScore);
-  $("#city").text(cityScore);
-  $("#south").text(southScore);
+// (temp) show scores
+//  $("#mnt").text(mntScore);
+//  $("#beach").text(beachScore);
+//  $("#city").text(cityScore);
+//  $("#south").text(southScore);
 
-// logic to select top scoring function
+// logic to select top scoring destination and show output content
 
   var maxScore = Math.max(mntScore, beachScore, cityScore, southScore);
 
-  if (mntScore=maxScore) {
-    $(".mtnWin").show()
+  if (mntScore===maxScore) {
+    $(".mntWin").show();
   }
 
-  if (beachScore=maxScore) {
-    $(".beachWin").show()
+  if (beachScore===maxScore) {
+    $(".beachWin").show();
   }
 
-  if (cityScore=maxScore) {
-    $(".cityWin").show()
+  if (cityScore===maxScore) {
+    $(".cityWin").show();
   }
 
-  if (southScore=maxScore) {
-    $(".southWin").show()
+  if (southScore===maxScore) {
+    $(".southWin").show();
   }
 
   $("#output").show();
-
-  event.preventDefault();
   });
-
 });
