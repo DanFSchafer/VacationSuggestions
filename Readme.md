@@ -1,6 +1,6 @@
 # Vacation Suggestion, an epicodus exercise
 
-#### By **Dan Schafer** June 14, 2016
+#### By Dan Schafer, June 14, 2016
 
 ## Description
 
@@ -8,8 +8,6 @@ Fill in the form, and a vacation suggestion appears !
 
 ## Known Bugs
 
-The form doesn't currently work for consecutive submissions, unfortunately.
-Can't figure out how to "hide" previous results.
 
 ## Support and contact details
 

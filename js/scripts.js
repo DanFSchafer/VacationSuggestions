@@ -74,8 +74,10 @@ $(function() {
   //  $("#south").text(southScore);
 
   // logic to select top scoring destination and show output content
+    $("#output, .mntWin, .beachWin, .cityWin, .southWin").fadeOut();
 
-    var maxScore = Math.max(mntScore, beachScore, cityScore, southScore);
+    var maxScore = 0
+    maxScore = Math.max(mntScore, beachScore, cityScore, southScore);
 
     if (mntScore===maxScore) {
       $(".mntWin").fadeIn();
